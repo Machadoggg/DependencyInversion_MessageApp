@@ -5,7 +5,7 @@ using MessageApp.Infrastructure.Services;
 
 // Configuración de inyección de dependencias
 var serviceProvider = new ServiceCollection()
-    .AddTransient<IMessageSender, EmailSender>() // Cambia aquí para probar SmsSender
+    .AddTransient<IMessageSender, EmailSender>()
     .BuildServiceProvider();
 
 var serviceProvider2 = new ServiceCollection()
